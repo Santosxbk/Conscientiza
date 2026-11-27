@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Arcos concêntricos em vermelho e preto">
+  <rect width="1000" height="1000" fill="#F4EFE6"/>
+  
+  <path d="M40 780A460 460 0 0 1 960 780Z" fill="#B23A22"/>
+  <g fill="none" stroke="#17130F" stroke-width="9">
+    <path d="M40 780A460 460 0 0 1 960 780"/>
+    <path d="M120 780A380 380 0 0 1 880 780"/>
+    <path d="M200 780A300 300 0 0 1 800 780"/>
+    <path d="M280 780A220 220 0 0 1 720 780"/>
+    <path d="M360 780A140 140 0 0 1 640 780"/>
+  </g>
+  <circle cx="500" cy="780" r="62" fill="#F4EFE6"/>
+  <circle cx="500" cy="780" r="62" fill="none" stroke="#17130F" stroke-width="9"/>
+  <g fill="#17130F">
+    <circle cx="110" cy="150" r="9"/><circle cx="150" cy="150" r="9"/><circle cx="190" cy="150" r="9"/>
+    <circle cx="110" cy="190" r="9"/><circle cx="150" cy="190" r="9"/><circle cx="190" cy="190" r="9"/>
+  </g>
+  <path d="M790 140h150M790 180h150M790 220h150" stroke="#17130F" stroke-width="7"/>
+
+</svg>

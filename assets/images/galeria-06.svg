@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Dois círculos sobrepostos com hachura">
+  <rect width="1000" height="1000" fill="#F4EFE6"/>
+  
+  <defs>
+    <pattern id="hachura" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0v18" stroke="#F4EFE6" stroke-width="4"/>
+    </pattern>
+    <clipPath id="recorte">
+      <circle cx="660" cy="520" r="300"/>
+    </clipPath>
+  </defs>
+  <circle cx="340" cy="520" r="300" fill="none" stroke="#17130F" stroke-width="14"/>
+  <circle cx="660" cy="520" r="300" fill="#B23A22"/>
+  <rect x="360" y="220" width="600" height="600" fill="url(#hachura)" clip-path="url(#recorte)"/>
+  <circle cx="660" cy="520" r="300" fill="none" stroke="#17130F" stroke-width="14"/>
+  <circle cx="500" cy="520" r="26" fill="#F4EFE6" stroke="#17130F" stroke-width="8"/>
+  <path d="M70 120h180M70 160h120" stroke="#17130F" stroke-width="8"/>
+
+</svg>

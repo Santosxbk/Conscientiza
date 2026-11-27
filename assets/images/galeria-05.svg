@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Ramos orgânicos e círculo vermelho">
+  <rect width="1000" height="1000" fill="#F4EFE6"/>
+  
+  <circle cx="250" cy="250" r="150" fill="#B23A22"/>
+  <g fill="none" stroke="#17130F" stroke-width="9" stroke-linecap="round">
+    <path d="M500 1000V700"/>
+    <path d="M500 760C420 660 330 620 250 520"/>
+    <path d="M500 760C580 660 670 620 750 520"/>
+    <path d="M500 640C440 560 400 470 410 380"/>
+    <path d="M500 640C560 560 600 470 590 380"/>
+    <path d="M250 520C210 460 190 400 195 340"/>
+    <path d="M750 520C790 460 810 400 805 340"/>
+    <path d="M410 380C380 330 360 300 355 260"/>
+    <path d="M590 380C620 330 640 300 645 260"/>
+  </g>
+  <g fill="#17130F">
+    <circle cx="195" cy="335" r="12"/><circle cx="805" cy="335" r="12"/>
+    <circle cx="355" cy="255" r="10"/><circle cx="645" cy="255" r="10"/>
+    <circle cx="410" cy="375" r="10"/><circle cx="590" cy="375" r="10"/>
+  </g>
+  <path d="M60 940h180M60 910h120" stroke="#B23A22" stroke-width="10"/>
+
+</svg>

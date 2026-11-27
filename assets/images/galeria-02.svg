@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Padrão de chevrons com faixa vermelha">
+  <rect width="1000" height="1000" fill="#F4EFE6"/>
+  <rect width="1000" height="1000" fill="#F4EFE6"/>
+  <path d="M0 110 L125 50 L250 110 L375 50 L500 110 L625 50 L750 110 L875 50 L1000 110" fill="none" stroke="#17130F" stroke-width="7"/>
+  <path d="M0 210 L125 150 L250 210 L375 150 L500 210 L625 150 L750 210 L875 150 L1000 210" fill="none" stroke="#17130F" stroke-width="7"/>
+  <path d="M0 310 L125 250 L250 310 L375 250 L500 310 L625 250 L750 310 L875 250 L1000 310" fill="none" stroke="#17130F" stroke-width="7"/>
+  <path d="M0 410 L125 350 L250 410 L375 350 L500 410 L625 350 L750 410 L875 350 L1000 410" fill="none" stroke="#17130F" stroke-width="7"/>
+  <path d="M0 510 L125 450 L250 510 L375 450 L500 510 L625 450 L750 510 L875 450 L1000 510" fill="none" stroke="#17130F" stroke-width="7"/>
+  <path d="M0 610 L125 550 L250 610 L375 550 L500 610 L625 550 L750 610 L875 550 L1000 610" fill="none" stroke="#17130F" stroke-width="7"/>
+  <path d="M0 710 L125 650 L250 710 L375 650 L500 710 L625 650 L750 710 L875 650 L1000 710" fill="none" stroke="#17130F" stroke-width="7"/>
+  <path d="M0 810 L125 750 L250 810 L375 750 L500 810 L625 750 L750 810 L875 750 L1000 810" fill="none" stroke="#17130F" stroke-width="7"/>
+  <path d="M0 910 L125 850 L250 910 L375 850 L500 910 L625 850 L750 910 L875 850 L1000 910" fill="none" stroke="#17130F" stroke-width="7"/>
+  <path d="M0 560 L125 500 L250 560 L375 500 L500 560 L625 500 L750 560 L875 500 L1000 560" fill="none" stroke="#B23A22" stroke-width="30"/>
+  <path d="M0 560 L125 500 L250 560 L375 500 L500 560 L625 500 L750 560 L875 500 L1000 560" fill="none" stroke="#F4EFE6" stroke-width="8"/>
+  <path d="M70 0v1000M930 0v1000" stroke="#B23A22" stroke-width="12"/>
+</svg>

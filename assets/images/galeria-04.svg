@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Ondas pretas e sol vermelho">
+  <rect width="1000" height="1000" fill="#F4EFE6"/>
+  <rect width="1000" height="1000" fill="#F4EFE6"/>
+  <circle cx="720" cy="250" r="165" fill="#B23A22"/>
+  <path d="M-40 420 Q 100 386 250 420 T 550 420 T 850 420 T 1140 420" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 460 Q 100 426 250 460 T 550 460 T 850 460 T 1140 460" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 500 Q 100 466 250 500 T 550 500 T 850 500 T 1140 500" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 540 Q 100 506 250 540 T 550 540 T 850 540 T 1140 540" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 580 Q 100 546 250 580 T 550 580 T 850 580 T 1140 580" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 620 Q 100 586 250 620 T 550 620 T 850 620 T 1140 620" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 660 Q 100 626 250 660 T 550 660 T 850 660 T 1140 660" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 700 Q 100 666 250 700 T 550 700 T 850 700 T 1140 700" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 740 Q 100 706 250 740 T 550 740 T 850 740 T 1140 740" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 780 Q 100 746 250 780 T 550 780 T 850 780 T 1140 780" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 820 Q 100 786 250 820 T 550 820 T 850 820 T 1140 820" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 860 Q 100 826 250 860 T 550 860 T 850 860 T 1140 860" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 900 Q 100 866 250 900 T 550 900 T 850 900 T 1140 900" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 940 Q 100 906 250 940 T 550 940 T 850 940 T 1140 940" fill="none" stroke="#17130F" stroke-width="5"/>
+  <path d="M-40 980 Q 100 946 250 980 T 550 980 T 850 980 T 1140 980" fill="none" stroke="#17130F" stroke-width="5"/>
+  <circle cx="720" cy="250" r="205" fill="none" stroke="#17130F" stroke-width="6"/>
+  <path d="M60 90h220M60 120h160" stroke="#17130F" stroke-width="8"/>
+</svg>

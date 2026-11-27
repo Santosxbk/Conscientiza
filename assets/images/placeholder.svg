@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Espaço reservado para uma foto">
+  <rect width="1000" height="1000" fill="#F4EFE6"/>
+  <rect x="28" y="28" width="944" height="944" fill="none" stroke="#17130F" stroke-width="3" stroke-dasharray="14 10"/>
+  <g fill="none" stroke="#17130F" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="395" y="380" width="210" height="155" rx="10"/>
+    <circle cx="500" cy="458" r="38"/>
+    <path d="M443 380l16-24h82l16 24"/>
+  </g>
+  <text x="500" y="650" text-anchor="middle" fill="#17130F" font-family="Georgia, serif" font-size="38">Sua foto aqui</text>
+  <text x="500" y="692" text-anchor="middle" fill="#6E6458" font-family="Arial, sans-serif" font-size="20">substitua o arquivo em assets/images/</text>
+</svg>

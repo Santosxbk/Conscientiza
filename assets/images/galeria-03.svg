@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Malha de losangos com losango vermelho">
+  <rect width="1000" height="1000" fill="#F4EFE6"/>
+  
+  <defs>
+    <pattern id="malha" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M50 0 100 50 50 100 0 50Z" fill="none" stroke="#17130F" stroke-width="4"/>
+      <circle cx="50" cy="50" r="5" fill="#17130F"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#malha)"/>
+  <path d="M500 210 790 500 500 790 210 500Z" fill="#B23A22"/>
+  <path d="M500 290 710 500 500 710 290 500Z" fill="#F4EFE6"/>
+  <path d="M500 290 710 500 500 710 290 500Z" fill="none" stroke="#17130F" stroke-width="8"/>
+  <path d="M500 380 620 500 500 620 380 500Z" fill="#17130F"/>
+  <g fill="#B23A22">
+    <circle cx="50" cy="50" r="9"/><circle cx="950" cy="50" r="9"/>
+    <circle cx="50" cy="950" r="9"/><circle cx="950" cy="950" r="9"/>
+  </g>
+
+</svg>
