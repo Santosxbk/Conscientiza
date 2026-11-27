@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dossiê sobre a Consciência Negra: história, memória, personagens e legado. 20 de novembro — Dia Nacional de Zumbi e da Consciência Negra.">
+  <meta name="author" content="Ayrá Santos">
+  <meta name="theme-color" content="#F4EFE6">
+  <title>Consciência Negra — Memória, Luta e Orgulho</title>
+
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('cn-tema') === 'escuro') {
+          document.documentElement.setAttribute('data-tema', 'escuro');
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', '#100D0B');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ====================== CABEÇALHO ====================== -->
+  <header class="cabecalho" id="topo">
+    <div class="wrap cabecalho__inner">
+      <a class="marca" href="#inicio" aria-label="Consciência Negra Dossiê 20.11 — início">
+        <span class="marca__sinal" aria-hidden="true"></span>
+        <span class="marca__nome">
+          Consciência Negra
+          <small>Dossiê 20.11</small>
+        </span>
+      </a>
+
+      <div class="cabecalho__direita">
+        <nav class="nav" id="nav-principal" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#historia">História</a>
+          <a href="#personagens">Personagens</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#atitudes">Atitudes</a>
+          <a href="#legado">Legado</a>
+          <a href="#dev">Dev</a>
+        </nav>
+
+        <button class="botao-mosaico-topo" type="button" data-abrir-mosaico aria-haspopup="dialog" aria-expanded="false" title="Abrir mosaico guiado">
+          <span class="botao-mosaico-topo__icone" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
+              <rect x="1" y="1" width="5.6" height="5.6"/>
+              <rect x="9.4" y="1" width="5.6" height="5.6"/>
+              <rect x="1" y="9.4" width="5.6" height="5.6"/>
+              <rect x="9.4" y="9.4" width="5.6" height="5.6"/>
+            </svg>
+          </span>
+          <span class="botao-mosaico-topo__texto">Mosaico</span>
+        </button>
+
+        <button class="botao-tema" type="button" aria-label="Ativar tema escuro" aria-pressed="false" title="Ativar tema escuro">
+          <svg class="icone-lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
+          </svg>
+          <svg class="icone-sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-principal">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ====================== HERO ====================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="wrap">
+        <div class="hero__meta">
+          <p>Dossiê · Memória e resistência</p>
+          <p>20 de novembro · feriado nacional</p>
+        </div>
+
+        <div class="hero__grade">
+          <div>
+            <h1 class="hero__titulo" id="hero-titulo">
+              Consciência
+              <span>Negra</span>
+            </h1>
+
+            <p class="hero__lead">
+              Uma data para lembrar Zumbi dos Palmares, celebrar a herança africana
+              e reafirmar, todos os dias, a luta por igualdade, dignidade e liberdade.
+            </p>
+          </div>
+
+          <aside class="data-bloco" aria-label="20 de novembro">
+            <p class="data-bloco__dia">20</p>
+            <p class="data-bloco__mes">Novembro</p>
+            <span class="data-bloco__linha" aria-hidden="true"></span>
+            <p class="data-bloco__nota">Dia Nacional de Zumbi e da Consciência Negra</p>
+          </aside>
+        </div>
+
+        <div class="hero__rodape">
+          <div class="hero__acoes">
+            <a class="link-seta" href="#sobre">Ler o dossiê <span aria-hidden="true">→</span></a>
+            <button class="link-seta link-seta--botao" type="button" data-abrir-mosaico data-passo="0" aria-haspopup="dialog" aria-expanded="false">
+              Percorrer no mosaico
+              <span aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <rect x="1" y="1" width="5.6" height="5.6"/>
+                  <rect x="9.4" y="1" width="5.6" height="5.6"/>
+                  <rect x="1" y="9.4" width="5.6" height="5.6"/>
+                  <rect x="9.4" y="9.4" width="5.6" height="5.6"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <p>Feriado nacional desde 2023 · Lei 14.759/2023</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== SOBRE ====================== -->
+    <section class="secao" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="wrap">
+        <div class="secao__topo">
+          <p class="secao__num" aria-hidden="true">01</p>
+          <h2 class="secao__titulo" id="sobre-titulo">Mais que uma data,<br>um movimento</h2>
+          <p class="secao__intro">
+            O 20 de novembro não celebra apenas um dia no calendário.
+            Ele reúne memória, cultura e a luta por justiça que atravessa gerações.
+          </p>
+        </div>
+
+        <div class="sobre">
+          <div class="sobre__texto">
+            <p>
+              A <strong>Consciência Negra</strong> é um chamado à memória, ao reconhecimento
+              e à transformação. No Brasil, o <strong>20 de novembro</strong> homenageia
+              <strong>Zumbi dos Palmares</strong>, morto em 1695, símbolo da resistência
+              à escravidão e da luta pela liberdade.
+            </p>
+            <p>
+              A data celebra a herança africana que atravessa a língua, a música, a culinária,
+              a religião e a identidade do país — e denuncia o racismo que ainda persiste.
+              Falar de consciência negra é falar de história, de cultura e de futuro.
+            </p>
+            <p>
+              Mais do que uma homenagem, é um convite para ocupar espaços, questionar
+              desigualdades e reconhecer, no cotidiano, o valor de uma história que
+              foi longamente silenciada.
+            </p>
+          </div>
+
+          <aside class="ficha">
+            <h3 class="ficha__titulo">Em resumo</h3>
+            <dl>
+              <div>
+                <dt>Data</dt>
+                <dd>20 de novembro</dd>
+              </div>
+              <div>
+                <dt>Homenagem</dt>
+                <dd>Zumbi dos Palmares</dd>
+              </div>
+              <div>
+                <dt>Feriado nacional</dt>
+                <dd>Desde 2023</dd>
+              </div>
+              <div>
+                <dt>Lei federal</dt>
+                <dd>14.759/2023</dd>
+              </div>
+              <div>
+                <dt>Ensino obrigatório</dt>
+                <dd>Lei 10.639/2003</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <p class="puxada">
+          Conhecer a própria história é o primeiro passo para transformar o presente.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================== HISTÓRIA ====================== -->
+    <section class="secao secao--alt" id="historia" aria-labelledby="historia-titulo">
+      <div class="wrap">
+        <div class="secao__topo">
+          <p class="secao__num" aria-hidden="true">02</p>
+          <h2 class="secao__titulo" id="historia-titulo">Uma linha do tempo<br>de resistência</h2>
+          <p class="secao__intro">
+            Do Quilombo dos Palmares ao feriado nacional: os marcos de uma luta
+            que atravessa séculos e continua viva.
+          </p>
+        </div>
+
+        <ol class="cronologia">
+          <li>
+            <span class="cronologia__ano">Séc. XVII</span>
+            <div>
+              <h3>Nasce o Quilombo dos Palmares</h3>
+              <p>Formado por pessoas escravizadas que fugiam da opressão, Palmares cresceu na Serra da Barriga e se tornou o maior território livre da América Portuguesa.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cronologia__ano">1695</span>
+            <div>
+              <h3>Zumbi é morto em 20 de novembro</h3>
+              <p>Após anos de resistência, o líder de Palmares é capturado e executado. Sua memória se torna o símbolo maior da luta negra no Brasil.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cronologia__ano">1971</span>
+            <div>
+              <h3>A primeira celebração da data</h3>
+              <p>Em Porto Alegre, o Grupo Palmares propõe o 20 de novembro como dia de reflexão e homenagem — gesto que se espalha pelo país.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cronologia__ano">2003</span>
+            <div>
+              <h3>Lei 10.639/03</h3>
+              <p>O ensino de história e cultura africana e afro-brasileira passa a ser obrigatório nas escolas brasileiras.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cronologia__ano">2011</span>
+            <div>
+              <h3>Dia Nacional de Zumbi e da Consciência Negra</h3>
+              <p>A Lei 12.519/2011 institui oficialmente a data no calendário nacional.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cronologia__ano">2023</span>
+            <div>
+              <h3>Feriado nacional</h3>
+              <p>A Lei 14.759/2023 torna o 20 de novembro feriado nacional em todo o Brasil.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====================== PERSONAGENS ====================== -->
+    <section class="secao" id="personagens" aria-labelledby="personagens-titulo">
+      <div class="wrap">
+        <div class="secao__topo">
+          <p class="secao__num" aria-hidden="true">03</p>
+          <h2 class="secao__titulo" id="personagens-titulo">Personagens<br>que inspiram</h2>
+          <p class="secao__intro">
+            Retratos de homens e mulheres que dedicaram a vida à liberdade, à justiça
+            e à valorização da cultura negra.
+          </p>
+        </div>
+
+        <div class="retratos">
+          <article class="retrato">
+            <figure class="retrato__foto">
+              <img src="assets/images/personagens/zumbi.jpg" alt="Pintura de Zumbi dos Palmares segurando uma lança, de Antônio Parreiras" width="768" height="1024" loading="lazy">
+            </figure>
+            <div class="retrato__corpo">
+              <p class="retrato__meta">1655–1695 · Líder quilombola</p>
+              <h3>Zumbi dos Palmares</h3>
+              <p>Último líder do Quilombo dos Palmares e símbolo máximo da resistência negra no Brasil.</p>
+              <p class="retrato__credito">Pintura: Antônio Parreiras · domínio público</p>
+            </div>
+          </article>
+
+          <article class="retrato">
+            <figure class="retrato__foto retrato__foto--dandara">
+              <img src="assets/images/personagens/dandara.png" alt="Ilustração de Dandara e Zumbi dos Palmares, do projeto EPTrilhas" width="960" height="540" loading="lazy">
+            </figure>
+            <div class="retrato__corpo">
+              <p class="retrato__meta">Século XVII · Guerreira e estrategista</p>
+              <h3>Dandara dos Palmares</h3>
+              <p>Lutou pela liberdade e pela autonomia das mulheres negras. Sua história inspira gerações.</p>
+              <p class="retrato__credito">Ilustração: EPTrilhas · CC BY 4.0 · não há retrato de época</p>
+            </div>
+          </article>
+
+          <article class="retrato">
+            <figure class="retrato__foto">
+              <img src="assets/images/personagens/mandela.jpg" alt="Fotografia de Nelson Mandela em 1994" width="960" height="1242" loading="lazy">
+            </figure>
+            <div class="retrato__corpo">
+              <p class="retrato__meta">1918–2013 · Líder anti-apartheid</p>
+              <h3>Nelson Mandela</h3>
+              <p>Liderou a luta contra o apartheid na África do Sul e se tornou o primeiro presidente negro do país.</p>
+              <p class="retrato__credito">Foto: Kingkongphoto · CC BY-SA 2.0</p>
+            </div>
+          </article>
+
+          <article class="retrato">
+            <figure class="retrato__foto">
+              <img src="assets/images/personagens/mlk.jpg" alt="Retrato de Martin Luther King Jr. com uma medalha" width="960" height="1241" loading="lazy">
+            </figure>
+            <div class="retrato__corpo">
+              <p class="retrato__meta">1929–1968 · Direitos civis</p>
+              <h3>Martin Luther King Jr.</h3>
+              <p>Pastor e líder do movimento dos direitos civis nos EUA, defensor da igualdade e da não violência.</p>
+              <p class="retrato__credito">Foto: Phil Stanziola · domínio público</p>
+            </div>
+          </article>
+
+          <article class="retrato">
+            <figure class="retrato__foto">
+              <img src="assets/images/personagens/abdias.jpg" alt="Fotografia de Abdias do Nascimento" width="960" height="1180" loading="lazy">
+            </figure>
+            <div class="retrato__corpo">
+              <p class="retrato__meta">1914–2011 · Ativista e artista</p>
+              <h3>Abdias do Nascimento</h3>
+              <p>Ator, escritor e ativista. Criou o Teatro Experimental do Negro e denunciou o racismo no Brasil.</p>
+              <p class="retrato__credito">Foto: Ricardo Stuckert/PR · CC BY 3.0 BR</p>
+            </div>
+          </article>
+
+          <article class="retrato">
+            <figure class="retrato__foto">
+              <img src="assets/images/personagens/conceicao.jpg" alt="Fotografia da escritora Conceição Evaristo" width="960" height="641" loading="lazy">
+            </figure>
+            <div class="retrato__corpo">
+              <p class="retrato__meta">1946 · Escritora</p>
+              <h3>Conceição Evaristo</h3>
+              <p>Uma das principais vozes da literatura afro-brasileira contemporânea, com obras sobre memória e identidade.</p>
+              <p class="retrato__credito">Foto: Fora do Eixo · CC BY-SA 2.0</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== GALERIA ====================== -->
+    <section class="secao secao--alt" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="wrap">
+        <div class="secao__topo">
+          <p class="secao__num" aria-hidden="true">04</p>
+          <h2 class="secao__titulo" id="galeria-titulo">Imagens que<br>contam histórias</h2>
+          <p class="secao__intro">
+            Seis pranchas inspiradas em grafismos afro-brasileiros. Clique em uma
+            imagem para ampliar.
+          </p>
+        </div>
+
+        <div class="galeria__grid">
+          <!-- PRANCHA 1: troque assets/images/galeria-01.svg por uma foto real -->
+          <figure class="galeria__item">
+            <button class="galeria__abrir" type="button" aria-label="Ampliar imagem: 01 Memória e resistência">
+              <img src="assets/images/galeria-01.svg" alt="Prancha com sol nascente vermelho e arcos concêntricos pretos" loading="lazy">
+            </button>
+            <figcaption><span>01</span> Memória e resistência</figcaption>
+          </figure>
+
+          <!-- PRANCHA 2: troque assets/images/galeria-02.svg por uma foto real -->
+          <figure class="galeria__item">
+            <button class="galeria__abrir" type="button" aria-label="Ampliar imagem: 02 Herança africana">
+              <img src="assets/images/galeria-02.svg" alt="Prancha com padrão de chevrons e faixa vermelha" loading="lazy">
+            </button>
+            <figcaption><span>02</span> Herança africana</figcaption>
+          </figure>
+
+          <!-- PRANCHA 3: troque assets/images/galeria-03.svg por uma foto real -->
+          <figure class="galeria__item">
+            <button class="galeria__abrir" type="button" aria-label="Ampliar imagem: 03 Cultura viva">
+              <img src="assets/images/galeria-03.svg" alt="Prancha com malha de losangos e losango vermelho central" loading="lazy">
+            </button>
+            <figcaption><span>03</span> Cultura viva</figcaption>
+          </figure>
+
+          <!-- PRANCHA 4: troque assets/images/galeria-04.svg por uma foto real -->
+          <figure class="galeria__item">
+            <button class="galeria__abrir" type="button" aria-label="Ampliar imagem: 04 Identidade">
+              <img src="assets/images/galeria-04.svg" alt="Prancha com ondas pretas e sol vermelho" loading="lazy">
+            </button>
+            <figcaption><span>04</span> Identidade</figcaption>
+          </figure>
+
+          <!-- PRANCHA 5: troque assets/images/galeria-05.svg por uma foto real -->
+          <figure class="galeria__item">
+            <button class="galeria__abrir" type="button" aria-label="Ampliar imagem: 05 Luta e orgulho">
+              <img src="assets/images/galeria-05.svg" alt="Prancha com ramos orgânicos e círculo vermelho" loading="lazy">
+            </button>
+            <figcaption><span>05</span> Luta e orgulho</figcaption>
+          </figure>
+
+          <!-- PRANCHA 6: troque assets/images/galeria-06.svg por uma foto real -->
+          <figure class="galeria__item">
+            <button class="galeria__abrir" type="button" aria-label="Ampliar imagem: 06 O futuro é coletivo">
+              <img src="assets/images/galeria-06.svg" alt="Prancha com dois círculos sobrepostos e hachura" loading="lazy">
+            </button>
+            <figcaption><span>06</span> O futuro é coletivo</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== ATITUDES ====================== -->
+    <section class="secao" id="atitudes" aria-labelledby="atitudes-titulo">
+      <div class="wrap">
+        <div class="secao__topo">
+          <p class="secao__num" aria-hidden="true">05</p>
+          <h2 class="secao__titulo" id="atitudes-titulo">O que podemos<br>fazer hoje</h2>
+          <p class="secao__intro">
+            Consciência se constrói com prática. Pequenas atitudes transformam
+            a escola, o trabalho e a comunidade.
+          </p>
+        </div>
+
+        <div class="atitudes">
+          <article class="atitude">
+            <span class="atitude__num" aria-hidden="true">01</span>
+            <h3>Estude e compartilhe</h3>
+            <p>Conheça autores, artistas e pensadores negros. Leve essa história para a sala de aula e para a conversa em casa.</p>
+          </article>
+
+          <article class="atitude">
+            <span class="atitude__num" aria-hidden="true">02</span>
+            <h3>Valorize a cultura</h3>
+            <p>Prestigie música, literatura, cinema e arte negra. Consumo consciente também é uma forma de reconhecimento.</p>
+          </article>
+
+          <article class="atitude">
+            <span class="atitude__num" aria-hidden="true">03</span>
+            <h3>Denuncie o racismo</h3>
+            <p>Racismo é crime. Saiba reconhecer, apoiar quem sofre e buscar os canais de denúncia, como o Disque 100.</p>
+          </article>
+
+          <article class="atitude">
+            <span class="atitude__num" aria-hidden="true">04</span>
+            <h3>Ocupe os espaços</h3>
+            <p>Apoie iniciativas, projetos e negócios liderados por pessoas negras. Representatividade também se constrói com escolhas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== LEGADO ====================== -->
+    <section class="legado" id="legado" aria-labelledby="legado-titulo">
+      <div class="wrap">
+        <p class="legado__rotulo">06 — Legado</p>
+        <h2 class="legado__titulo" id="legado-titulo">A luta continua</h2>
+
+        <blockquote class="citacao">
+          <p>“Parece sempre impossível até que se faça.”</p>
+          <cite>Nelson Mandela</cite>
+        </blockquote>
+
+        <p class="legado__texto">
+          Que o 20 de novembro não seja apenas um feriado no calendário, mas um lembrete
+          diário de que memória, respeito e representatividade transformam a sociedade.
+          Conhecer a própria história é o primeiro passo para escrever o futuro.
+        </p>
+
+        <div class="legado__acoes">
+          <a class="link-seta link-seta--claro" href="#historia">Revisitar a história <span aria-hidden="true">→</span></a>
+          <a class="link-seta link-seta--claro" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== DEV / PROJETO ====================== -->
+    <section class="secao secao--dev" id="dev" aria-labelledby="dev-titulo">
+      <div class="wrap">
+        <div class="secao__topo">
+          <p class="secao__num" aria-hidden="true">07</p>
+          <h2 class="secao__titulo" id="dev-titulo">Sobre o projeto</h2>
+          <p class="secao__intro">
+            Um trabalho escolar sobre memória, identidade e resistência.
+          </p>
+        </div>
+
+        <div class="dev">
+          <div class="dev__texto">
+            <p>
+              Este site integra o projeto do <strong>Colégio Estadual 24 de Outubro</strong>,
+              em Aracaju (SE), e foi desenvolvido para o Dia Nacional de Zumbi e da
+              Consciência Negra.
+            </p>
+            <p>
+              Pesquisa, textos e desenvolvimento: <strong>Ayrá Santos</strong>, aluno pardo,
+              de ascendência indígena e negra.
+            </p>
+            <p>
+              O trabalho é escolar e sem fins comerciais. As fontes históricas e legais
+              usadas na pesquisa estão indicadas no rodapé.
+            </p>
+            <p class="dev__assinatura">— Ayrá Santos</p>
+          </div>
+
+          <aside class="ficha">
+            <h3 class="ficha__titulo">Ficha do projeto</h3>
+            <dl>
+              <div>
+                <dt>Instituição</dt>
+                <dd>Colégio Estadual 24 de Outubro</dd>
+              </div>
+              <div>
+                <dt>Cidade</dt>
+                <dd>Aracaju — SE</dd>
+              </div>
+              <div>
+                <dt>Desenvolvimento</dt>
+                <dd>Ayrá Santos</dd>
+              </div>
+              <div>
+                <dt>Identidade</dt>
+                <dd>Aluno pardo, de ascendência indígena e negra</dd>
+              </div>
+              <div>
+                <dt>Ano</dt>
+                <dd>2026</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================== RODAPÉ ====================== -->
+  <footer class="rodape">
+    <div class="wrap rodape__grade">
+      <div>
+        <p class="rodape__marca">Consciência Negra</p>
+        <p class="rodape__nota">Dossiê sobre memória, cultura e resistência negra no Brasil.</p>
+        <p class="rodape__fontes">Fontes: Lei 10.639/2003 · Lei 12.519/2011 · Lei 14.759/2023 · registros históricos sobre o Quilombo dos Palmares.</p>
+        <p class="rodape__fontes">Fotografias e ilustrações: Wikimedia Commons — créditos completos na seção Personagens.</p>
+      </div>
+
+      <nav class="rodape__nav" aria-label="Links do rodapé">
+        <a href="#sobre">Sobre</a>
+        <a href="#historia">História</a>
+        <a href="#personagens">Personagens</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#atitudes">Atitudes</a>
+        <a href="#dev">Dev</a>
+      </nav>
+
+      <p class="rodape__data">20 · 11</p>
+    </div>
+
+    <div class="wrap rodape__base">
+      <p>© <span id="ano-atual">2026</span> Consciência Negra · Projeto do Colégio Estadual 24 de Outubro (Aracaju–SE) · Desenvolvido por <a href="#dev">Ayrá Santos</a>.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- ====================== MOSAICO GUIADO ====================== -->
+  <div class="mosaico" id="mosaico" role="dialog" aria-modal="true" aria-labelledby="mosaico-titulo" hidden>
+    <div class="mosaico__painel">
+      <header class="mosaico__topo">
+        <p class="mosaico__marca">
+          <span class="mosaico__selo" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="1" y="1" width="5.6" height="5.6"/>
+              <rect x="9.4" y="1" width="5.6" height="5.6"/>
+              <rect x="1" y="9.4" width="5.6" height="5.6"/>
+              <rect x="9.4" y="9.4" width="5.6" height="5.6"/>
+            </svg>
+          </span>
+          Mosaico do dossiê
+        </p>
+        <p class="mosaico__contador" aria-live="polite">
+          <span id="mosaico-atual">1</span> de <span id="mosaico-total">8</span>
+        </p>
+        <button class="mosaico__fechar" type="button" aria-label="Fechar mosaico">×</button>
+      </header>
+
+      <div class="mosaico__corpo">
+        <nav class="mosaico__trilha" id="mosaico-trilha" aria-label="Etapas do dossiê"></nav>
+
+        <div class="mosaico__etapa">
+          <p class="mosaico__num" id="mosaico-num">01</p>
+          <h2 class="mosaico__titulo" id="mosaico-titulo">Boas-vindas</h2>
+          <p class="mosaico__texto" id="mosaico-texto"></p>
+          <p class="mosaico__dica" id="mosaico-dica"></p>
+
+          <div class="mosaico__acoes">
+            <button class="botao-mosaico botao-mosaico--voltar" type="button">← Voltar</button>
+            <a class="botao-mosaico botao-mosaico--ver" id="mosaico-ver" href="#inicio">Ver seção</a>
+            <button class="botao-mosaico botao-mosaico--proximo" type="button">Próximo →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mosaico__barra" aria-hidden="true">
+        <span id="mosaico-barra"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================== LIGHTBOX ====================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada" hidden>
+    <button class="lightbox__fechar" type="button" aria-label="Fechar imagem">×</button>
+    <button class="lightbox__nav lightbox__nav--anterior" type="button" aria-label="Imagem anterior">←</button>
+    <button class="lightbox__nav lightbox__nav--proxima" type="button" aria-label="Próxima imagem">→</button>
+
+    <figure>
+      <img class="lightbox__imagem" src="" alt="">
+      <figcaption class="lightbox__legenda"></figcaption>
+    </figure>
+
+    <p class="lightbox__contador" aria-live="polite"></p>
+  </div>
+
+  <button class="topo-btn" id="topo-btn" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
